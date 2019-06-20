@@ -10,20 +10,20 @@ killTomcat()
 {
 	pid=`ps -f|grep tomcat|grep java|awk '{print $2}'`
 	echo "tomcat Id list : $pid"
-	if [ "$pid" = ""]
+	if [ "$pid"=""]
 	then
 		echo "no time pid alive"
 	else
 		kill -9 $pid
 	fi
 }
-
+echo "wanghang************************************************************"
 cd $PROJ_PATH/enterprise
 mvn clean install
 #停tomcat
 killTomcat
 
-
+echo "wanghang%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 #删除原有工程
 rm -rf $TOMCAT_APP_PATH/webapps/ROOT
 rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
