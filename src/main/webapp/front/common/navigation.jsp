@@ -46,7 +46,7 @@
     <div style="width: 768px;height: 107px;float: right;overflow: hidden">
         <ul class="nav">
             <li>
-                <a href="<%=path%>/index">首 页</a>
+                <a href="<%=path%>/index">首汪页</a>
             </li>
             <li>
                 <a href="<%=path%>/about">关于我们</a>
